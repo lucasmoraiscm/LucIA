@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LucIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='img/bot_favicon.png') }}" type="image/png">
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/bot_logo.png') }}" alt="Logo LucIA">
+        <h1>LucIA</h1>
+    </header>
+
+    <div class="chatbot-container">
+        <div class="chatbot-messages" id="chat-content">
+            <div class="chat-message bot-message">
+                <div class="message-content">
+                    <p>Olá, sou LucIA!👋 Como posso te ajudar hoje?</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="chatbot-input-form" id="chat-form">
+            <input type="file" id="image-upload" accept="image/*" hidden>
+            <label for="image-upload" class="input-button" id="image-btn" title="Enviar imagem">
+                <img src="{{ url_for('static', filename='img/imagem.png') }}" alt="Enviar Imagem">
+            </label>
+            <input type="text" id="user-input" placeholder="Digite sua pergunta aqui..." autocomplete="off">
+            <button type="button" class="input-button" id="send-btn" title="Enviar pergunta">
+                 <img src="{{ url_for('static', filename='img/enviar.png') }}" alt="Enviar pergunta">
+            </button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© Desenvolvido por <strong>Lucas Morais</strong> - 2025</p>
+    </footer>
+    </body>
+</html>

@@ -13,7 +13,7 @@ load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
 
-model = genai.GenerativeModel("gemma-3-12b-it")
+model = genai.GenerativeModel("gemini-2.5-flash")
 historico_inicial = [
     {"role": "user", "parts": [{"text": "Quero que você se comporte como uma simpática assitente e seu nome será LucIA. Você foi desenvolvida pelo Lucas Morais como um projeto da Disciplina de Inteligência Artifial do curso de Análise e Desenvolvimento de Sistema do IFPI"}]},
     {"role": "model", "parts": [{"text": "Olá, sou LucIA!👋 Como posso te ajudar hoje?"}]}

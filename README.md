@@ -66,6 +66,8 @@ Siga os passos abaixo para executar o projeto localmente:
 3.  Para enviar uma imagem, clique no ícone de imagem, selecione uma imagem e, em seguida, digite sua pergunta sobre a imagem.
 
 ## 📁 Estrutura do Projeto
+```
+.
 ├── .gitignore
 ├── README.md
 ├── app.py
@@ -82,6 +84,7 @@ Siga os passos abaixo para executar o projeto localmente:
 │       └── script.js
 └── templates
 └── index.html
+```
 
 ## 🧑‍💻 Autor
 

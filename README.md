@@ -2,6 +2,8 @@
 
 LucIA é um projeto de chatbot inteligente desenvolvido como trabalho final para a disciplina de Inteligência Artificial. A aplicação web permite que os usuários interajam com a assistente LucIA, que é alimentada pelo modelo de linguagem de última geração da Google, o Gemini.
 
+![Interface da LucIA](https://i.imgur.com/tz9E7sC.png)
+
 ## 🔗 Link Para a LucIA
 * https://lucia-production.up.railway.app
 
